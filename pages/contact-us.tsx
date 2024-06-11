@@ -109,9 +109,7 @@ export default function Component() {
                                         <Textarea className="min-h-[100px]" id="message"
                                                   placeholder="Enter your message"/>
                                     </div>
-                                    <div className="space-y-2 py-2.5 gap-4">
                                         <Button type="submit" variant="outline" className="rounded">Send message</Button>
-                                    </div>
                                 </form>
                             </div>
                             <div className="flex flex-col items-start space-y-4">
