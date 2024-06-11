@@ -27,7 +27,7 @@ export default function App({ Component, pageProps: { session, ...pageProps }, }
             showOnShallow={false}
         />
 
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem enableColorScheme>
           <Component {...pageProps} />
         </ThemeProvider>
         <Toaster richColors theme="dark" closeButton />

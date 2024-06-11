@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { JSX, SVGProps, useState } from "react";
 import data from "../public/pages/contactus.json"; // Import the JSON data
-import {Button} from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { toast } from 'sonner'; // Import Sonner
 
 // Define types for the JSON data
 interface NavLink {
@@ -49,6 +50,12 @@ export default function Component() {
     const [showProducts, setShowProducts] = useState(false);
     const [showServices, setShowServices] = useState(false);
 
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        // Simulate form submission failure
+        toast.error('The contact form is currently not working. Please try again later.');
+    };
+
     return (
         <div className="flex flex-col min-h-screen">
             <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
@@ -69,8 +76,8 @@ export default function Component() {
                 </nav>
             </header>
             <main className="flex flex-col w-full max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-20 min-h-screen">
-
-                <section id="contact" className="mx-auto px-4 p-8 md:px-6 max-w-6xl w-full grid gap-24">
+                <section id="contact"
+                         className="flex flex-col items-center justify-center mx-auto px-4 p-8 md:px-6 max-w-6xl w-full gap-24">
                     <div className="container px-4 md:px-6">
                         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
                             <div className="space-y-4">
@@ -82,25 +89,30 @@ export default function Component() {
                                         possible.
                                     </p>
                                 </div>
-                                <div className="grid grid-cols-2 gap-4">
-                                    <div className="space-y-2">
-                                        <Label htmlFor="first-name">First name</Label>
-                                        <Input id="first-name" placeholder="Enter your first name"/>
+                                <form onSubmit={handleSubmit} className="gap-4">
+                                    <div className="grid grid-cols-2 gap-4">
+                                        <div className="space-y-2">
+                                            <Label htmlFor="first-name">First name</Label>
+                                            <Input id="first-name" placeholder="Enter your first name"/>
+                                        </div>
+                                        <div className="space-y-2">
+                                            <Label htmlFor="last-name">Last name</Label>
+                                            <Input id="last-name" placeholder="Enter your last name"/>
+                                        </div>
                                     </div>
                                     <div className="space-y-2">
-                                        <Label htmlFor="last-name">Last name</Label>
-                                        <Input id="last-name" placeholder="Enter your last name"/>
+                                        <Label htmlFor="email">Email</Label>
+                                        <Input id="email" placeholder="Enter your email" type="email"/>
                                     </div>
-                                </div>
-                                <div className="space-y-2">
-                                    <Label htmlFor="email">Email</Label>
-                                    <Input id="email" placeholder="Enter your email" type="email"/>
-                                </div>
-                                <div className="space-y-2">
-                                    <Label htmlFor="message">Message</Label>
-                                    <Textarea className="min-h-[100px]" id="message" placeholder="Enter your message"/>
-                                </div>
-                                <Button variant="outline" className="rounded">Send message</Button>
+                                    <div className="space-y-2">
+                                        <Label htmlFor="message">Message</Label>
+                                        <Textarea className="min-h-[100px]" id="message"
+                                                  placeholder="Enter your message"/>
+                                    </div>
+                                    <div className="space-y-2 py-2.5 gap-4">
+                                        <Button type="submit" variant="outline" className="rounded">Send message</Button>
+                                    </div>
+                                </form>
                             </div>
                             <div className="flex flex-col items-start space-y-4">
                                 <div className="grid grid-cols-2 gap-4">
@@ -148,7 +160,7 @@ function MountainIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) 
             strokeLinecap="round"
             strokeLinejoin="round"
         >
-            <path d="m8 3 4 8 5-5 5 15H2L8 3z"/>
+            <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
         </svg>
     );
 }

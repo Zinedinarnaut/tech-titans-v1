@@ -143,7 +143,7 @@ export default function Component() {
                     )}
                 </section>
 
-                <section id="contact" className="mx-auto px-4 p-8 md:px-6 max-w-6xl w-full grid gap-24">
+                <section id="contact" className="flex flex-col items-center justify-center mx-auto px-4 p-8 md:px-6 max-w-6xl w-full gap-24">
                     <div className="container px-4 md:px-6">
                         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
                             <div className="space-y-4">
