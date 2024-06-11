@@ -1,0 +1,40 @@
+{
+  "header": {
+    "logo": {
+      "text": "TechTitans",
+      "iconClass": "h-6 w-6",
+      "link": "/"
+    },
+    "navLinks": [
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Products and Services",
+        "href": "/products-and-services"
+      },
+      {
+        "text": "About Us",
+        "href": "/about-us"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact-us"
+      }
+    ]
+  },
+  "footer": {
+    "text": "© 2024 TechTitans. All rights reserved.",
+    "links": [
+      {
+        "text": "Terms of Service",
+        "href": "#"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "#"
+      }
+    ]
+  }
+}

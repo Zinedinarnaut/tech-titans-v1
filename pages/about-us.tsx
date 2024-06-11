@@ -55,7 +55,7 @@ export default function Component() {
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-900">
                     <div className="container px-4 md:px-6 space-y-6 md:space-y-10">
                         <div className="flex flex-col items-center text-center space-y-4">
                             <div className="space-y-2">
@@ -77,7 +77,7 @@ export default function Component() {
                                     </Avatar>
                                     <div className="space-y-1 text-center">
                                         <h3 className="text-lg font-medium">Caine Botha</h3>
-                                        <p className="text-sm text-gray-500 dark:text-gray-400">Co-Founder & CEO</p>
+                                        <p className="text-sm text-gray-500 dark:text-gray-400">Chairman</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col items-center space-y-2">
@@ -87,7 +87,7 @@ export default function Component() {
                                     </Avatar>
                                     <div className="space-y-1 text-center">
                                         <h3 className="text-lg font-medium">Zinedin Arnaut</h3>
-                                        <p className="text-sm text-gray-500 dark:text-gray-400">Co-Founder & CTO</p>
+                                        <p className="text-sm text-gray-500 dark:text-gray-400">Minute Taker</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col items-center space-y-2">
@@ -98,7 +98,7 @@ export default function Component() {
                                     </Avatar>
                                     <div className="space-y-1 text-center">
                                         <h3 className="text-lg font-medium">Aliyah Von</h3>
-                                        <p className="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
+                                        <p className="text-sm text-gray-500 dark:text-gray-400">Member</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col items-center space-y-2">
@@ -109,7 +109,7 @@ export default function Component() {
                                     </Avatar>
                                     <div className="space-y-1 text-center">
                                         <h3 className="text-lg font-medium">Fetiniai Havea</h3>
-                                        <p className="text-sm text-gray-500 dark:text-gray-400">Product Manager</p>
+                                        <p className="text-sm text-gray-500 dark:text-gray-400">Member</p>
                                     </div>
                                 </div>
                             </div>
