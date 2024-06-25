@@ -109,7 +109,7 @@ export default function Component() {
                                         <Textarea className="min-h-[100px]" id="message"
                                                   placeholder="Enter your message"/>
                                     </div>
-                                        <Button type="submit" variant="outline" className="rounded">Send message</Button>
+                                    <Button type="submit" variant="outline" className="rounded">Send message</Button>
                                 </form>
                             </div>
                             <div className="flex flex-col items-start space-y-4">
@@ -128,6 +128,10 @@ export default function Component() {
                             </div>
                         </div>
                     </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.432667239534!2d150.95048152571238!3d-33.95571712319343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12957cd38d4671%3A0xb8477bacbbacc148!2sHolsworthy%20High%20School!5e0!3m2!1sen!2sau!4v1719357482167!5m2!1sen!2sau"
+                        width="600" height="450" className="border:0;" loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </section>
             </main>
             <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
